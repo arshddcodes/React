@@ -1,35 +1,70 @@
-import { useState } from 'react'
-import reactLogo from './assets/react.svg'
-import viteLogo from '/vite.svg'
-import './App.css'
+import { useState } from "react";
+import reactLogo from "./assets/react.svg";
+import viteLogo from "/vite.svg";
+import "./App.css";
 
 function App() {
-  const [count, setCount] = useState(0)
+  let [count, setCount] = useState(1);
+  function incre() {
+    setCount(count + 1);
+    console.log(count + 1);
+  }
 
+  function decre() {
+    setCount(count - 1);
+    console.log(count - 1);
+  }
   return (
     <>
-      <div>
-        <a href="https://vite.dev" target="_blank">
-          <img src={viteLogo} className="logo" alt="Vite logo" />
-        </a>
-        <a href="https://react.dev" target="_blank">
-          <img src={reactLogo} className="logo react" alt="React logo" />
-        </a>
-      </div>
-      <h1>Vite + React</h1>
-      <div className="card">
-        <button onClick={() => setCount((count) => count + 1)}>
-          count is {count}
-        </button>
-        <p>
-          Edit <code>src/App.jsx</code> and save to test HMR
-        </p>
-      </div>
-      <p className="read-the-docs">
-        Click on the Vite and React logos to learn more
-      </p>
+      <h1>{count}</h1>
+      <button onClick={incre}>Increment</button>
+      <button onClick={decre}>decrement</button>
     </>
-  )
+  );
 }
 
-export default App
+// function App() {
+//   let [active, setActive] = useState(true);
+
+//   let isActive;
+
+//   function giveStyle(){
+//     setActive(true);
+//     console.log(active);
+//   }
+//   function removeStyle(){
+//     setActive(false);
+//     console.log(active)
+//   }
+//   const style = { textDecoration: "line-through" };
+//   return (
+//     <>
+//       {console.log("code render")}
+//       <h1 style={active ? style : null}>this is my first react app</h1>
+//       <button onClick={giveStyle}>Give Style</button>
+//       <button onClick={removeStyle}>Remove Style</button>
+//     </>
+//   );
+// }
+
+// {
+//   let isActive;
+//   function giveStyle(){
+//     isActive = true;
+//     console.log(isActive);
+//   }
+//   function removeStyle(){
+//     isActive = false;
+//     console.log(isActive)
+//   }
+//   const style = { textDecoration: "line-through" };
+//   return (
+//     <>
+//       <h1 style={isActive ? style : null}>this is my first react app</h1>
+//       <button onClick={giveStyle}>Give Style</button>
+//       <button onClick={removeStyle}>Remove Style</button>
+//     </>
+//   );
+// }
+
+export default App;
