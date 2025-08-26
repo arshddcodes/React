@@ -15,7 +15,7 @@ function App() {
   return (
     <>
       <BrowserRouter>
-      <Link to="/dashboard">DashBord</Link>
+  
         <Routes>
           <Route path="Dashboard" element={<Dashboard />} />
           <Route path="Product" element={<Product />} />
