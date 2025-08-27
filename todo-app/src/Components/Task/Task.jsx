@@ -1,26 +1,21 @@
 import "./task.css";
-function Task() {
+function Task({ list }) {
   return (
-    <div className="taskCont">
+    <div>
       <h2 className="taskHead">Task List</h2>
-      <ul className="taskList">
-        <li className="task">
-          <label className="taskLabel">
-            <input type="checkbox" className="Check" />
-            Task One
-          </label>
-          <button>Delete</button>
-        </li>
-      </ul>
-      <ul className="taskList">
-        <li className="task">
-          <label className="taskLabel">
-            <input type="checkbox" className="Check" />
-            Task Two
-          </label>
-          <button>Delete</button>
-        </li>
-      </ul>
+      <div className="taskCont">
+        <ul className="taskList">
+          {list.map((li, index) => (
+            <li key={index} className="task">
+              <label className="taskLabel">
+                <input type="checkbox" className="Check" />
+                {li}
+              </label>
+              <button className="deleteBtn">Delete</button>
+            </li>
+          ))}
+        </ul>
+      </div>
     </div>
   );
 }

@@ -7,9 +7,8 @@
 
 
 .TaskCont{
-  height:300px;
   width: 600px;
   border-color:1px solid white;
-  background-color:white;
+  background-color:#323aa1;
   border-radius: 22px;
 }

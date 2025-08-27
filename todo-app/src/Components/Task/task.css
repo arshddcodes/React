@@ -1,13 +1,52 @@
-/* .taskCont{
-
-
-    
+li {
+  list-style: none;
+  min-height: 40px;        
+  width: 220px;             
+  padding: 8px;
+  background: #c8dafd;
+  border-radius: 10px;
+  margin: 8px 0;
 }
 
-.taskHead{
 
+.taskList {
+  padding: 0;
+  margin: 0;
 }
 
-.taskList{
+.task {
+  background-color: #c8dafd;
+  border-radius: 11px;
+  padding: 10px;
+  margin: 8px 0;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
 
-} */
+.deleteBtn {
+  background: #000000;
+  border: none;
+  color: white;
+  padding: 5px 10px;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+
+.taskHead {
+  color: white;
+  text-align: center;
+}
+
+.taskCont {
+  display: flex;
+  justify-content: space-around;
+  align-items: flex-start;
+}
+
+.Check {
+  height: 20px;
+  width: 20px;
+  margin-right: 10px;
+}

@@ -1,6 +1,9 @@
 import "./addtask.css";
 
-function AddTask({ task, setTask }) {
+function AddTask({ task, setTask, list, setList }) {
+  function handleTask() {
+    setList([...list, task]);
+  }
   return (
     <div className="AddCont">
       <h1 className="AddHead">Todo List</h1>
@@ -12,7 +15,9 @@ function AddTask({ task, setTask }) {
           placeholder="Add To Do Here"
           onChange={(e) => setTask(e.target.value)}
         />
-        <button className="AddBtn">add</button>
+        <button className="AddBtn" onClick={handleTask}>
+          add
+        </button>
       </div>
     </div>
   );
