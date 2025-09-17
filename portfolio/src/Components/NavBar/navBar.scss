@@ -1,0 +1,17 @@
+@import "../../styles/variable.scss";
+.navBar-cont{
+    width: fit-content;
+    border-radius: 30px;
+    background-color:black;
+    color: white;
+}
+
+
+.nav-link{
+    text-decoration: none;
+    color: $fontcolor;
+}
+
+.nav-button{
+    border-radius:30px;
+}

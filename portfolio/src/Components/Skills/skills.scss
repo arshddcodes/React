@@ -1,0 +1,59 @@
+@import "../../styles/variable.scss";
+@import "../../styles/mixin.scss";
+
+.skill-cont {
+  @include flex();
+  width: 100%;
+}
+
+.skills {
+  width: 50%;
+  @include flex(left);
+  flex-direction: column;
+  .skill-head {
+    width: 390px;
+  }
+}
+
+.skills-each {
+  width: 90%;
+  padding: 15px;
+  @include flex(left, space-between);
+  border-bottom: 1px solid $fontcolor;
+  flex-direction: column;
+
+  .skill-title {
+    @include flex(left, space-between);
+  }
+
+  .arrow {
+    transform: rotate(180deg);
+
+    &.open{
+      transform: rotate(0deg);
+    }
+  }
+}
+
+.skill-content {
+  max-height: 0;
+  overflow: hidden;
+  &.open {
+    max-height: 200px;
+    transition: max-height 0.5s ease;
+  }
+}
+
+.skill-img {
+  height: 400px;
+  width: 400px;
+  position: relative;
+  overflow: hidden;
+  border-radius: 20px;
+  @include flex();
+
+  img {
+    width: 100%;
+    object-fit: cover;
+  }
+}

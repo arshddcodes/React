@@ -1,0 +1,9 @@
+@import "../styles/mixin.scss";
+@import "../styles/variable.scss";
+
+
+
+.layout-cont{
+    @include flex();
+    flex-direction: column;
+}

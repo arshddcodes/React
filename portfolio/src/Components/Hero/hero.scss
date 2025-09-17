@@ -1,0 +1,49 @@
+@import "../../styles/variable.scss";
+@import "../../styles/mixin.scss";
+
+.hero-cont {
+  width: 100%;
+  height:fit-content;
+  color: $fontcolor;
+}
+
+.row-cont {
+  @include flex();
+}
+
+.hero-prof {
+  h1 {
+    font-size: 70px;
+    font-weight: 800;
+  }
+  p {
+    font-size: 30px;
+  }
+}
+
+.col-one {
+  @include flex(center, end);
+  .hero-name {
+    h1 {
+      font-size: 70px;
+      font-weight: 800;
+    }
+    span {
+      font-size: 30px;
+    }
+  }
+}
+
+.hero-img {
+  position: relative;
+  height: 490px;
+  width: 100%;
+  overflow: hidden;
+  border-radius: 22px;
+  @include flex();
+
+  img {
+    height: 100%;
+    object-fit: cover;
+  }
+}
