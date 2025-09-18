@@ -2,7 +2,8 @@ import "./addtask.css";
 
 function AddTask({ task, setTask, list, setList }) {
   function handleTask() {
-    setList([...list, task]);
+    setList([...list, { task: task, completed: false }]);
+    setTask("");
   }
   return (
     <div className="AddCont">
