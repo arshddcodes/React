@@ -1,11 +1,12 @@
 import { Route, Routes } from "react-router-dom";
 import "./App.scss";
-import Home from "./pages/Home/Home";
-import About from "./pages/Home/About/About";
-import Contact from "./Pages/home/contact/Contact";
-import Project from "./Pages/home/project/Project";
-import Blog from "./Pages/home/blog/Blog";
+import Home from "./Pages/home";
+import About from "./Pages/home/about";
+import Contact from "./Pages/home/contact";
+import Project from "./Pages/home/project";
+import Blog from "./Pages/home/blog";
 import Layout from "./layout/Layout";
+import ProjectDes from "./Components/projectDescription";
 
 function App() {
   return (
@@ -16,6 +17,7 @@ function App() {
         <Route path="/project" element={<Project />} />
         <Route path="/blog" element={<Blog />} />
         <Route path="/contact" element={<Contact />} />
+        <Route path="project/:id" element={<ProjectDes />} />
       </Route>
     </Routes>
   );

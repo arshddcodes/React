@@ -3,3 +3,8 @@
   align-items: $align;
   justify-content: $justify;
 }
+
+@mixin text($font, $weight) {
+  font-size: $font;
+  font-weight: $weight;
+}

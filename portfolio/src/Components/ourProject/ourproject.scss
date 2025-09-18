@@ -1,0 +1,26 @@
+@import "../../styles/mixin.scss";
+
+.ourProject-Cont {
+  min-height: 100vh;
+  width: 100%;
+  padding: 50px;
+}
+
+.ourProject-title {
+  width: 100%;
+  h1 {
+    @include text(3rem, 900);
+  }
+  h2 {
+    @include text(1rem, 900);
+  }
+}
+
+.cards-container {
+  margin-top: 50px;
+  display: flex;
+  flex-wrap: wrap;
+  width: 100%;
+  @include flex();
+  gap: 80px;
+}

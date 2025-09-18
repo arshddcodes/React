@@ -1,0 +1,18 @@
+@import "../../styles/mixin.scss";
+
+.Abour-card {
+  width: 300px;
+  height: 300px;
+  background-color: #d0ff71;
+  border-radius: 20px;
+  color: black;
+  @include flex();
+  flex-direction: column;
+  padding: 10px;
+  text-align: center;
+
+  h3 {
+    @include text(2rem, 700);
+  }
+}
+

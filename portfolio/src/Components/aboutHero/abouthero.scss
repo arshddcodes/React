@@ -1,0 +1,45 @@
+@import "../../styles/mixin.scss";
+
+.AboutHero-Cont {
+  height: 100vh;
+  width: 100%;
+}
+
+.About-cont {
+  @include flex(start, end);
+  flex-direction: column;
+  gap: 20px;
+
+  h1 {
+    @include text(6rem, 900);
+  }
+
+  h3 {
+    @include text(2.5rem, 900);
+  }
+  p {
+    @include text(1rem, 900);
+  }
+
+  .SocialMedia-icons {
+    @include flex();
+    width: fit-content;
+    gap: 10px;
+  }
+
+  a {
+    color: white;
+  }
+}
+
+.AboutImage-Cont {
+  @include flex();
+
+  .About-Image {
+    width: 400px;
+    height: 550px;
+    overflow: hidden;
+    border-radius: 22px;
+    @include flex();
+  }
+}

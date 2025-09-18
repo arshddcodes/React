@@ -6,7 +6,7 @@ import "./layout.scss";
 function Layout() {
   return (
     <div className="layout-cont">
-      <div className="mt-2 mb-2">
+      <div className="mt-2 mb-2 layout-nav">
         <NavBar />
       </div>
       <main>

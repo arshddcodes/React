@@ -10,6 +10,11 @@
 .nav-link{
     text-decoration: none;
     color: $fontcolor;
+
+    &.active{
+        color: yellow !important ;
+    }
+
 }
 
 .nav-button{
