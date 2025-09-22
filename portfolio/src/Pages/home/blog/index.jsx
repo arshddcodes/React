@@ -3,10 +3,11 @@ import OurProject from "../../../Components/ourProject/OurProject";
 
 function Blog() {
   const [blog, setBlog] = useState([]);
+  const filter = blog.slice(0, 10);
   const data = {
     heading: "Design insights and ideas",
     subHeading: "lorem ipsum fake dummy text here",
-    project: blog,
+    project: filter,
   };
 
   useEffect(() => {

@@ -29,7 +29,7 @@
   .arrow {
     transform: rotate(180deg);
 
-    &.open{
+    &.open {
       transform: rotate(0deg);
     }
   }
@@ -55,5 +55,30 @@
   img {
     width: 100%;
     object-fit: cover;
+  }
+}
+
+// Responsive
+
+@media (max-width: 991px) {
+  .skill-cont {
+    flex-direction: column-reverse;
+    margin-top: 50px;
+    gap: 10px;
+  }
+  .skills {
+    width: 90%;
+  }
+
+  .skill-img {
+    width: 90%;
+  }
+}
+
+@media (max-width: 441px) {
+  .skill {
+    .skill-head {
+      width: 100%;
+    }
   }
 }
