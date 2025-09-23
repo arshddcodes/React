@@ -42,12 +42,14 @@ function Skills() {
           <div className="skills-each" key={index}>
             <div className="skill-title" onClick={() => handleToggle(index)}>
               <h3>{skills.title}</h3>
-              <span className={`arrow ${toggle === index ? "open" : "" }`}>
+              <span className={`arrow ${toggle === index ? "open" : ""}`}>
                 <RiArrowDropDownLine size={30} />
               </span>
             </div>
             {toggle === index && (
-              <div className={`skill-content ${toggle === index ? "open" : "" }`}>
+              <div
+                className={`skill-content ${toggle === index ? "open" : ""}`}
+              >
                 <p>{skills.content}</p>
               </div>
             )}

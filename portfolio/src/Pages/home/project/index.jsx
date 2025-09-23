@@ -10,7 +10,7 @@ function project() {
   };
   return (
     <div>
-      <OurProject  data={data}/>;
+      <OurProject data={data} />
     </div>
   );
 }

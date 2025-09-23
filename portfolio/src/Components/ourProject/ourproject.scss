@@ -10,6 +10,7 @@
   width: 100%;
   h1 {
     @include text(3rem, 900);
+    
   }
   h2 {
     @include text(1rem, 900);

@@ -1,10 +1,13 @@
 @import "../../styles/mixin.scss";
+@import "../../styles/variable.scss";
+
 .pro-card {
   width: 400px;
   height: 500px;
   position: relative;
   overflow: hidden;
   border-radius: 22px;
+  color: white;
   // border: 1px solid white;
 }
 
@@ -26,10 +29,17 @@
   .pro-des {
     h1 {
       @include text(6rem, 700);
+      text-decoration: none;
     }
 
     h5 {
+      text-decoration: none;
       @include text(0.5rem, 300);
+    }
+
+    a {
+      text-decoration: none;
+      color: inherit;
     }
   }
 }

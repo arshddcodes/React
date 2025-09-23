@@ -7,19 +7,23 @@ import Project from "./Pages/home/project";
 import Blog from "./Pages/home/blog";
 import Layout from "./layout/Layout";
 import ProjectDes from "./Components/projectDescription";
+import Footer from "./Components/Footer/Footer";
 
 function App() {
   return (
-    <Routes>
-      <Route path="/" element={<Home />} />
-      <Route element={<Layout />}>
-        <Route path="/about" element={<About />} />
-        <Route path="/project" element={<Project />} />
-        <Route path="/blog" element={<Blog />} />
-        <Route path="/contact" element={<Contact />} />
-        <Route path="project/:id" element={<ProjectDes />} />
-      </Route>
-    </Routes>
+    <>
+      <Routes>
+        <Route path="/" element={<Home />} />
+        <Route element={<Layout />}>
+          <Route path="/about" element={<About />} />
+          <Route path="/project" element={<Project />} />
+          <Route path="/blog" element={<Blog />} />
+          <Route path="/contact" element={<Contact />} />
+          <Route path="project/:id" element={<ProjectDes />} />
+        </Route>
+      </Routes>
+      <Footer />
+    </>
   );
 }
 

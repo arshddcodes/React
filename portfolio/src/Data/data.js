@@ -24,9 +24,9 @@ export const skills = [
 export const Project = [
   {
     id: 1,
-    title: "project one",
-    subTitle: "loren ipsum just a fake message or content for sample contents",
-    des: "hey this is description section",
+    title: "Beebyt Clone",
+    subTitle: "beebyt business solution website clone",
+    des: "I maked beebyt website clone using html/css",
   },
   {
     id: 2,

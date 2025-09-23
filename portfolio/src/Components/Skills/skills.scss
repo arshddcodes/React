@@ -4,6 +4,7 @@
 .skill-cont {
   @include flex();
   width: 100%;
+  margin-top: 100px;
 }
 
 .skills {
@@ -12,6 +13,7 @@
   flex-direction: column;
   .skill-head {
     width: 390px;
+    margin-top: 20px;
   }
 }
 
@@ -81,4 +83,8 @@
       width: 100%;
     }
   }
+}
+
+@media (max-width: 300px) {
+  
 }
