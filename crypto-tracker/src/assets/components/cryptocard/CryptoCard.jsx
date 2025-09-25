@@ -33,9 +33,13 @@ function CryptoCard({ coins, status }) {
                   <span className="fw-medium ">{coin.name}</span>
                 </div>
                 <Badge bg="success">{coin.current_price}</Badge>
-                <Button onClick={() => dispatch(addFavourite(coin.id))}>
-                  add Favourite
-                </Button>
+                {favourite.includes(coin.id) ? (
+                  <Button>Remove</Button>
+                ) : (
+                  <Button onClick={() => dispatch(addFavourite(coin.id))}>
+                    add Favourite
+                  </Button>
+                )}
               </ListGroup.Item>
             ))}
           </ListGroup>

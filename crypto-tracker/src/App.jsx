@@ -42,7 +42,7 @@ function App() {
               <CryptoCard status={status} coins={coin} />
             </Col>
             <Col lg={4}>
-              <FavouriteCard />
+              <FavouriteCard coins={coin} />
             </Col>
           </Row>
         )}

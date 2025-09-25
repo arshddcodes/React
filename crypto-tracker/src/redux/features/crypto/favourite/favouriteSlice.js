@@ -7,7 +7,9 @@ const favouriteSlice = createSlice({
   },
   reducers: {
     addFavourite: (state, action) => {
-      state.list.push(action.payload);
+      if (!state.list.includes(action.payload)) {
+        state.list.push(action.payload);
+      }
     },
   },
 });
