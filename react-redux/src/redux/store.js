@@ -6,3 +6,6 @@ const store = configureStore({
     counter: counterReducer,
   },
 });
+
+
+export default store;
