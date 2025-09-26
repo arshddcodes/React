@@ -8,17 +8,15 @@ function Skills() {
 
   const skill = [
     {
-      title: "react js",
-      content:
-        "React is an open-source JavaScript library used to build dynamic and interactive user interfaces. It follows a component-based structure and uses a virtual DOM for efficient rendering and updates.",
+      title: "UX/UI",
+      content: "Designing user-friendly interfaces and experiencess",
     },
     {
-      title: "Node js",
-      content:
-        "React is an open-source JavaScript library used to build dynamic and interactive user interfaces. It follows a component-based structure and uses a virtual DOM for efficient rendering and updates.",
+      title: "Graphic Designing",
+      content: "Creating visual assets and branding materials",
     },
     {
-      title: "express js",
+      title: "FrontEnd Dev",
       content:
         "React is an open-source JavaScript library used to build dynamic and interactive user interfaces. It follows a component-based structure and uses a virtual DOM for efficient rendering and updates.",
     },
@@ -34,8 +32,9 @@ function Skills() {
         <div className="skill-head">
           <h1>What i Know</h1>
           <p>
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Eligendi
-            odit veniam optio similique fugit! Similique aspernatur itaque
+            “As a Frontend Developer, I build clean, responsive, and engaging
+            web experiences with React, HTML, CSS, JavaScript, Bootstrap, and
+            Sass — backed by strong knowledge of UI/UX and Graphic Design.”
           </p>
         </div>
         {skill.map((skills, index) => (

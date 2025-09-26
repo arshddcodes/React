@@ -1,11 +1,11 @@
 export const skills = [
   {
-    name: "react",
-    des: "React is a powerfull library used for making dynamic website",
+    name: "UX/UI",
+    des: "Designing user-friendly and visually appealing web interfaces. Tools figma / adobe xd",
   },
   {
-    name: "Node js",
-    des: "React is a powerfull library used for making dynamic website",
+    name: "Graphic Designing",
+    des: "Creating visual content, branding, and digital graphics. Tools Photoshop / Illustrator / Canva",
   },
   {
     name: "Angular js",
@@ -13,6 +13,14 @@ export const skills = [
   },
   {
     name: "react",
+    des: "React is a powerfull library used for making dynamic website",
+  },
+  {
+    name: "hello bro",
+    des: "React is a powerfull library used for making dynamic website",
+  },
+  {
+    name: "hello bro",
     des: "React is a powerfull library used for making dynamic website",
   },
   {
@@ -30,19 +38,19 @@ export const Project = [
   },
   {
     id: 2,
-    title: "project two",
+    title: "React-todo",
     subTitle: "loren ipsum just a fake message or content for sample contents",
     des: "hey this is description section",
   },
   {
     id: 3,
-    title: "project three",
+    title: "React Crypto tracker",
     subTitle: "loren ipsum just a fake message or content for sample contents",
     des: "hey this is description section",
   },
   {
     id: 4,
-    title: "project four",
+    title: "React Portfolio",
     subTitle: "loren ipsum just a fake message or content for sample contents",
     des: "hey this is description section",
   },

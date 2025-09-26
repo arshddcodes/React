@@ -10,8 +10,8 @@ function Hero() {
         <Row className="row-cont">
           <Col className="col-one">
             <div className="hero-name">
-              <span>Arshad</span>
-              <h1>Web</h1>
+              <span>Arshdd Ux</span>
+              <h1>front end</h1>
             </div>
           </Col>
           <Col className="hero-img">
@@ -20,7 +20,7 @@ function Hero() {
           <Col>
             <div className="hero-prof">
               <h1>Developer</h1>
-              <p>hey this is dummy text</p>
+              <p>i am a aspiring Front end developer</p>
             </div>
           </Col>
         </Row>

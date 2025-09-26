@@ -3,7 +3,7 @@
 .AboutHero-Cont {
   height: 100vh;
   width: 100%;
-  margin-top:20px;
+  margin-top: 20px;
 }
 
 .About-cont {
@@ -18,8 +18,9 @@
   h3 {
     @include text(2.5rem, 900);
   }
+  
   p {
-    @include text(1rem, 900);
+    @include text(1rem, 400);
   }
 
   .SocialMedia-icons {
@@ -45,6 +46,53 @@
   }
 }
 
-@media (max-width:551px){
-  
+// Responsive styles
+@media (max-width: 991px) {
+  .AboutHero-Cont {
+    height: auto;
+    margin-top: 10px;
+  }
+
+  .About-cont, .AboutImage-Cont {
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+  }
+
+  .AboutImage-Cont {
+    margin-top: 20px;
+  }
+
+  .About-Image {
+    width: 80%;
+    height: auto;
+  }
+}
+
+@media (max-width: 551px) {
+  .About-cont {
+    h1 {
+      font-size: 3rem;
+    }
+
+    h3 {
+      font-size: 2rem;
+    }
+
+    p {
+      font-size: 0.9rem;
+    }
+
+    .SocialMedia-icons {
+      gap: 8px;
+    }
+  }
+
+  .AboutImage-Cont {
+    .About-Image {
+      width: 90%;
+      height: auto;
+    }
+  }
 }
